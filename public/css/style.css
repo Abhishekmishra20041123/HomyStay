@@ -429,10 +429,11 @@ body {
 /* Container spacing - consistent padding on all sides */
 .container,
 .container-fluid {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  max-width: 100%;
 }
 
 /* Card spacing */
@@ -472,7 +473,7 @@ section,
 .row {
   margin-left: -0.5rem;
   margin-right: -0.5rem;
-  padding: 0.5rem 0;
+  padding: 0.5rem 0.5rem;
 }
 
 .row > * {
@@ -488,8 +489,8 @@ section,
   /* Container spacing for mobile */
   .container,
   .container-fluid {
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
   }
@@ -537,7 +538,7 @@ section,
   /* Section spacing for mobile */
   section,
   .section {
-    padding: 1rem 0.75rem;
+    padding: 1rem 0.5rem;
     margin: 0.75rem 0;
   }
 
@@ -545,7 +546,7 @@ section,
   .row {
     margin-left: -0.5rem;
     margin-right: -0.5rem;
-    padding: 0.5rem 0;
+    padding: 0.5rem 0.5rem;
   }
 
   .row > * {
@@ -595,12 +596,12 @@ section,
 
   /* Navbar adjustments */
   .navbar {
-    padding: 0.5rem 0.75rem;
+    padding: 0.5rem 0.5rem;
   }
 
   /* Footer adjustments */
   .f-info {
-    padding: 1rem 0.75rem;
+    padding: 1rem 0.5rem;
   }
 }
 
@@ -644,6 +645,16 @@ section,
   h3 {
     font-size: 1.1rem;
   }
+
+  /* Navbar adjustments */
+  .navbar {
+    padding: 0.5rem 0.5rem;
+  }
+
+  /* Footer adjustments */
+  .f-info {
+    padding: 1rem 0.5rem;
+  }
 }
 
 /* ============================================
@@ -652,8 +663,8 @@ section,
 @media (min-width: 768px) and (max-width: 991px) {
   .container,
   .container-fluid {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
@@ -665,7 +676,7 @@ section,
 
   section,
   .section {
-    padding: 1.5rem 1.25rem;
+    padding: 1.5rem 0.5rem;
     margin: 1rem 0;
   }
 }
@@ -675,15 +686,17 @@ section,
    ============================================ */
 @media (min-width: 992px) {
   .container {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+    max-width: 100%;
   }
 
   .container-fluid {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    max-width: 100%;
   }
 
   .card,
@@ -693,8 +706,20 @@ section,
 
   section,
   .section {
-    padding: 2rem 1.5rem;
+    padding: 2rem 0.5rem;
     margin: 1.5rem 0;
+  }
+  
+  /* Adjust row margins on desktop */
+  .row {
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+    padding: 0.5rem 0.5rem;
+  }
+  
+  .row > * {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 }
 
@@ -703,13 +728,25 @@ section,
    ============================================ */
 @media (min-width: 1200px) {
   .container {
-    max-width: 1140px;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+    max-width: 100%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 
   section,
   .section {
-    padding: 2.5rem 2rem;
+    padding: 2.5rem 0.5rem;
+  }
+  
+  /* Adjust row margins on large desktop */
+  .row {
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+    padding: 0.5rem 0.5rem;
+  }
+  
+  .row > * {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 }

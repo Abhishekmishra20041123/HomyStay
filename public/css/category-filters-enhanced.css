@@ -5,9 +5,9 @@
     flex-wrap: nowrap;
     align-items: center;
     gap: 1rem;
-    padding: 1.5rem 0;
+    padding: 0.5rem 0.5rem;
     border-bottom: 1px solid #e9ecef;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
     overflow-x: auto;
     overflow-y: hidden;
     scrollbar-width: thin;
@@ -312,7 +312,7 @@
 @media (max-width: 768px) {
     .filter-wrapper {
         gap: 0.75rem;
-        padding: 1rem 0;
+        padding: 1rem 0.5rem;
         flex-wrap: nowrap;
     }
     
@@ -336,6 +336,38 @@
     
     .tax-toggle {
         flex-shrink: 0;
+        margin-left: auto;
+    }
+}
+
+/* ============================================
+   DESKTOP (min-width: 992px)
+   ============================================ */
+@media (min-width: 992px) {
+    .filter-wrapper {
+        padding: 0.5rem 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .filter {
+        min-width: 80px;
+        padding: 0.75rem 1rem;
+    }
+    
+    .filter > div {
+        width: 64px;
+        height: 64px;
+    }
+    
+    .filter i {
+        font-size: 1.875rem;
+    }
+    
+    .filter p {
+        font-size: 0.875rem;
+    }
+    
+    .tax-toggle {
         margin-left: auto;
     }
 }
