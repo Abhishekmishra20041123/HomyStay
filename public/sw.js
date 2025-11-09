@@ -1,4 +1,4 @@
-const CACHE_NAME = 'wanderlust-v1';
+const CACHE_NAME = 'wanderlust-v2';
 const urlsToCache = [
   '/',
   '/css/style.css',
